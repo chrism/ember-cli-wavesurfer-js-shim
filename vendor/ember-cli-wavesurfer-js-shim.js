@@ -4,6 +4,6 @@ define('wavesurfer', [], function() {
   'use strict';
 
   return {
-    'default': Wavesurfer
+    'default': WaveSurfer
   };
 });
