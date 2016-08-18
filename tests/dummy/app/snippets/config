@@ -1,0 +1,5 @@
+
+APP: {
+  // include wavesurferPlugins so the specific js files load like this
+  wavesurferPlugins: ['regions']
+}

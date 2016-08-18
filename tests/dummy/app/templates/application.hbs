@@ -13,14 +13,14 @@
 
 <p>You can install it like a standard Ember addon. This brings in the <a href="https://wavesurfer-js.org/">Wavesurfer.js</a> dependency and makes it available as an ES6 style import</p>
 
-{{!code-snippet name="installation" id="installation-code"}}
+{{code-snippet name="installation" id="installation-code"}}
 
 <hr>
 
 <h2>Audio File</h2>
 
 <p>
-  Here is an example audio file which we will use as the basis to illustrate using Wavesurfer
+  Here is an example audio file which we will use as the basis to illustrate using Wavesurfer.
 </p>
 
 <audio controls src="vendor/demo_audio.mp3">
@@ -32,8 +32,18 @@
 <h2>Basic Usage</h2>
 
 <p>
-  Once installed you can now import wavesurfer and use it to obtain the colors from an image.
+  Once installed you can now import wavesurfer and use it to display the waveform of the audio.
 </p>
+
+<p>
+  This is a very simple example, which simply displays a basic wavesurfer element.
+</p>
+
+<p>
+  <a href="https://medium.com/@chrisdmasters/testing-async-in-ember-js-part-one-7ec9bc070c0e">Using registerWaiter to wait for async code to finish</a> explains why there is specific testing code.
+</p>
+
+{{code-snippet name="basic-example.js" id="basic-example-code"}}
 
 {{wavesurfer-basic src="vendor/demo_audio.mp3"}}
 
@@ -42,9 +52,21 @@
 <h2>Using Plugins</h2>
 
 <p>
-  To include plugins, such as Regions you need to add them to config/environment.js to make sure the javascript files are included
+  To include <a href="https://wavesurfer-js.org/plugins/">plugins</a>, such as <a href="https://wavesurfer-js.org/plugins/regions.html">regions</a> first you need to add them to <code><strong>config/environment.js</strong></code> as an array to make sure the javascript files are included:
 </p>
 
-{{!code-snippet name="region-plugins" id="region-plugins-code"}}
+{{code-snippet name="config" id="config-code"}}
+
+<p>
+  Then you can use them as documented in the guides, e.g. for regions you can add them like this:
+</p>
+
+{{code-snippet name="regions-example.js" id="regions-example-code"}}
 
 {{wavesurfer-regions src="vendor/demo_audio.mp3"}}
+
+<hr>
+
+<h2>Further Information</h2>
+
+<p>See <a href="https://wavesurfer-js.org">Wavesurfer.js</a> for more details, or the <a href="https://github.com/chrism/ember-cli-wavesurfer-js-shim">Github repo for this project</a></p>
