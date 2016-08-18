@@ -1,6 +1,8 @@
 import Ember from 'ember';
 import layout from '../templates/components/wavesurfer-regions';
 
+import config from '../config/environment';
+
 import Wavesurfer from 'wavesurfer';
 
 export default Ember.Component.extend({
@@ -27,7 +29,7 @@ export default Ember.Component.extend({
           barWidth: 2
       });
 
-      wavesurfer.load(src);
+      wavesurfer.load(config.rootURL + src);
 
       wavesurfer.on('ready', () => {
         Ember.run(() => {
