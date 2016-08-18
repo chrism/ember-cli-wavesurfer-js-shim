@@ -1,5 +1,7 @@
 # Ember-cli-wavesurfer-js-shim
 
+[![Build Status](https://travis-ci.org/chrism/ember-cli-wavesurfer-js-shim.svg?branch=master)](https://travis-ci.org/chrism/ember-cli-wavesurfer-js-shim)
+
 A customizable audio waveform visualization <a href="https://wavesurfer-js.org">Wavesurfer.js</a>
 
 ```js
