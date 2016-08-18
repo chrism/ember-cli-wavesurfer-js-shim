@@ -1,6 +1,18 @@
 # Ember-cli-wavesurfer-js-shim
 
-This README outlines the details of collaborating on this Ember addon.
+A customizable audio waveform visualization <a href="https://wavesurfer-js.org">Wavesurfer.js</a>
+
+```js
+ember install ember-cli-wavesurfer-js-shim
+```
+
+You can then use it in an ES6 style
+
+```js
+import Wavesurfer from 'wavesurfer';
+```
+
+[Documentation with examples](http://chrismasters.net/ember-cli-wavesurfer-js-shim/)
 
 ## Installation
 
