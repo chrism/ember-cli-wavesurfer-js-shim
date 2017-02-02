@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-wavesurfer-js-shim",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Ember CLI shim for the wavesurfer.js audio library as ES6 import",
   "directories": {
     "doc": "doc",
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "chrism/ember-cli-vibrant-js-shim",
+  "repository": "dlandau/ember-cli-wavesurfer-js-shim",
   "engines": {
     "node": ">= 0.10.0"
   },
