@@ -1,6 +1,6 @@
 /*jshint node:true*/
 module.exports = {
-  description: 'Installs Wavesurfer JS from Bower'
+  description: 'Installs Wavesurfer JS from Bower',
 
   normalizeEntityName: function() {},
 
